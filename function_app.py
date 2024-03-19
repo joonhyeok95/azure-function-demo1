@@ -16,7 +16,7 @@ def API_DEMO_01(req: func.HttpRequest) -> func.HttpResponse:
 
     name = req.params.get('name')
     if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
+        return func.HttpResponse(f"[VERSION_1.0.0] Hello, {name}.")
     else:
         return func.HttpResponse(
              "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
